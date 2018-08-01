@@ -9,10 +9,14 @@
     </head>
    <!-- <body onload="chosethePuzzleSize()"> -->
       <body onload="createCircles()">  
-		  <div id="wrapper">
+		  <div id="wrapper" onclick="checkWin()">
         <h1>Circle the Dot </h1>
-               
-        <canvas id="canvas1" onclick="colorBlackCircles()" style="border:1px solid #000000;" width="600px" height="500px" ></canvas><br> 
+               <div>
+        <canvas id="canvas1" onclick="colorBlackCircles()" style="border:1px solid #000000;" width="600px" height="500px" ></canvas> 
+				   
+			   <div id="divWinLose"> </div>
+					   
+				   <div/><br> 
 		 <!--</div>-->
           <div id="divScore">
                   <div>

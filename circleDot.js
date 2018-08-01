@@ -321,7 +321,8 @@ function moveRed(){
         
 		if (arrayCircles[oldRedPosition][2] == "red" ){
 			youWon == true;
-			alert("Congratulations! You wow! ");
+			//alert("Congratulations! You Won! ");
+			showWinLose();
 		}
 		
 		if (oldRedPosition < 14 || oldRedPosition > 154 || 
@@ -475,3 +476,25 @@ function calcRoute(){
 									}
 								}
 							}
+
+
+function showWinLose() {
+    let x = document.getElementById("divWinLose");
+	
+    if (x.style.display === "none"){
+		 x.style.display = "block";
+		document.getElementById("divWinLose").innerHTML = "Congratulations! You Won!<br> Can you do better?";
+    } else {
+        x.style.display = "block";
+		document.getElementById("divWinLose").innerHTML = "Congratulations! You Won!<br> Can you do better?";
+    }
+}
+
+function checkWin(){
+	let x = document.getElementById("wrapper");
+	
+    if (youWon){
+		alert("test");
+		showWinLose();
+}
+}

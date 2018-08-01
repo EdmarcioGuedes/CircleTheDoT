@@ -63,3 +63,20 @@ h1 {
 	align-content: center;
 	align-self: center;
 }
+
+#divWinLose {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 0px;
+	display:none;
+}
+
+#spanWinLose{
+	display:none;
+}
+
+span{
+	display:none;
+}
