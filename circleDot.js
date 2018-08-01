@@ -76,15 +76,15 @@ function chosePuzzleSize(fieldsize){
 let test = true;
 function createCircles(){
 
-     document.getElementById("p1").innerHTML = " ";
+     //document.getElementById("p1").innerHTML = " ";
     
      for(let i=0; i<zeroArray.length; i++){
         if (zeroArray[i] != 0){
-            document.getElementById("p1").innerHTML +="\n" +(i+1) + " was entered " + zeroArray[(i)];
+            //document.getElementById("p1").innerHTML +="\n" +(i+1) + " was entered " + zeroArray[(i)];
             console.log(zeroArray);
             
             if (zeroArray[i] > 1){
-                document.getElementById("p1").innerHTML += " times<br>";
+                //document.getElementById("p1").innerHTML += " times<br>";
                 console.log(zeroArray);
             }
         }
@@ -201,7 +201,7 @@ function colorBlackCircles(){
 		if(distanceRadious < 20 && arrayCircles[i][2] != "red"){
 			arrayCircles[i] = [arrayCircles[i][0],arrayCircles[i][1],"black"];
 						
-			document.getElementById("p1").innerHTML = distanceRadious +" : Mouse X, Y: "+ mouseDeltaX +" "+ + mouseDeltaY +". Circle X, Y: "+ arrayCircles[i][0]+" "+ arrayCircles[i][1];
+			//document.getElementById("p1").innerHTML = distanceRadious +" : Mouse X, Y: "+ mouseDeltaX +" "+ + mouseDeltaY +". Circle X, Y: "+ arrayCircles[i][0]+" "+ arrayCircles[i][1];
 			
 		//	alert(distanceRadious +" : Mouse X, Y: "+ mouseDeltaX +" "+ + mouseDeltaY +". Circle X, Y: "+ arrayCircles[i][0]+" "+ arrayCircles[i][1]);
 						

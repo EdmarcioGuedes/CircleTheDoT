@@ -1,50 +1,14 @@
-h1 {margin: 0px;
-	align-content: center;
-	align-self: center;
-
-}
-
-#canvas1 {
-	
-	/*background-color:darkturquoise;*/
-	background-color: black;
-	
-	border-radius: 2em 2em 2em 2em;
-}
-
-#divScore{
-    display:flex;
-     justify-content: center;
-}
-
-#divScore div {
-    background-color:darkturquoise;
-    width: 250px;
-    height: 60px;
-    border: 3px  solid black;
-	border-radius: 2em 2em 2em 2em;
-    display: inline-block;
-    margin:5px;
-    margin-top:0px;
-    text-align: center;
-   
-}
-
-
-
-
-
 /*
-use flex box:
+USE FLEX BOX:
 https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website2
 https://www.w3schools.com/css/css3_flexbox.asp
+USE COOKIES FOR SCORING TRAKING:
+https://www.w3schools.com/js/js_cookies.asp
 */
 
-
-body {
-	font-family: Verdana, Arial, sans-serif;
-	background-color: #DDDDDD;
-	border-radius: 30px
+#canvas1 {
+	background-color: black;
+	border-radius: 2em 2em 2em 2em;
 }
 
 #wrapper {
@@ -53,24 +17,49 @@ body {
 	margin: auto;
 	min-width: 580px;
 	max-width: 602px;
-    
-    align-content: center;
+	border: 3px solid black;
+	padding: 10px;
+	align-content: center;
 }
 
-#rightcol {
+#divScore {
+	display: flex;
+	justify-content: center;
+}
 
-/*margin-left: 155px; background-color: #ffffff; color: #000000;*/
-} 
-	
+#divScore div {
+	background-color: darkturquoise;
+	width: 250px;
+	height: 50px;
+	border: 3px solid black;
+	border-radius: 2em 2em 2em 2em;
+	display: inline-block;
+	margin: 3px;
+	text-align: center;
+}
+
+#divScore div p {
+	margin: 0px;
+}
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #DDDDDD;
+	border-radius: 30px
+}
+
 h1 {
-		color: #075E54;
-    
-    
-		font-family: arial, sans-serif;
-		text-align: center
-	}
+	color: #075E54;
+	font-family: arial, sans-serif;
+	text-align: center
+}
 
 div {
-		border-radius: 30px;
-        
+	border-radius: 30px;
+}
+
+h1 {
+	margin: 0px;
+	align-content: center;
+	align-self: center;
 }
