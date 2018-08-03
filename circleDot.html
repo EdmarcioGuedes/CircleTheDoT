@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <title>Circle the Dot</title>
-        <script src="circleDot.js"></script>
-		<link rel="stylesheet" href="circleDot.css">
-    </head>
+   <head>
+      <meta charset="utf-8">
+      <title>Circle the Dot</title>
+      <script src="circleDot.js"></script>
+      <link rel="stylesheet" href="circleDot.css">
+   </head>
    <!-- <body onload="chosethePuzzleSize()"> -->
-      <body onload="createCircles()">  
-		  <div id="wrapper" onclick="checkWin()">
-        <h1>Circle the Dot </h1>
-               <div>
-        <canvas id="canvas1" onclick="colorBlackCircles()" style="border:1px solid #000000;" width="600px" height="500px" ></canvas> 
-				   
-			   <div id="divWinLose"> </div>
-					   
-				   <div/><br> 
-		 <!--</div>-->
-          <div id="divScore">
-                  <div>
-                      <label>Your Score</label>
-                      <p id="pYourScore">0</p>
+   <body onload="createCircles()">
+      <div id="wrapper" onclick="checkWinOrLose()">
+         <h1>Circle the Dot </h1>
+         <div>
+            <canvas id="canvas1" width="600" height="500" style="border:1px solid #000000;" onclick="colorBlackCircles()"></canvas>
+            <div id="divWinLose"> </div>
+            <div>
+               <br> 
+               <div id="divScore">
+                  <div id="divTimes">
+                     <label>Times Red Moved:</label>
+                     <p id="pYourScore">0</p>
                   </div>
-                  <div>
-                      <label>Best Score</label><br>
-                      <p id="pBestScore">10</p>
+                  <div >
+                     <label>Best Win, Red Moved:</label><br>
+                     <p id="pBestScore">10</p>
                   </div>
-              
+               </div>
             </div>
-          
-              
-          </div>
-        <!--<button id="btn1" onclick="chosePuzzleSize('small')">Start</button>
-        <p id="firstOutput"></p>
-        <p id="resultOutput"></p>
- 		<p id="p1">  </p>-->
-    </body>
+         </div>
+      </div>
+      <!--<button id="btn1" onclick="chosePuzzleSize('small')">Start</button>
+         <p id="firstOutput"></p>
+         <p id="resultOutput"></p>
+         <p id="p1">  </p>-->
+   </body>
 </html>
